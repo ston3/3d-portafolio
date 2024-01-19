@@ -40,7 +40,7 @@ export const Home = () => {
   }
 
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize()
-  const [biplaneScale, biplanePosition] = adjustBiplaneForScreenSize();
+  const [planeScale, planePosition] = adjustBiplaneForScreenSize();
 
 
   return (
@@ -76,9 +76,9 @@ export const Home = () => {
         />
         <Plane 
           isRotating={isRotating}
-          position={biplanePosition}
+          position={planePosition}
           rotation={[0,20.1,0]}
-          scale={biplaneScale}
+          scale={planeScale}
         />
       </Suspense>
 
